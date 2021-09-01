@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Attendance"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/attendance"
+        android:layout_width="261dp"
+        android:layout_height="51dp"
+        android:text="Attendance"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/goback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_marginLeft="300dp"
+
+        android:background="@drawable/button_rounded"
+        />
+
+    <TextView
+        android:id="@+id/studentstranscript"
+        android:layout_width="393dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/goback1"
+        android:layout_marginTop="9dp"
+        android:text="Student Attendance"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_marginLeft="300dp"
+
+        android:background="@drawable/button_rounded"
+        />
+
+    <ListView
+
+        android:id="@+id/t_list"
+        android:layout_width="408dp"
+        android:layout_height="592dp"
+        android:layout_below="@+id/studentstranscript"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

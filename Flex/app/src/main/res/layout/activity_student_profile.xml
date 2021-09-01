@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentProfile"
+    android:padding="30dp">
+
+
+    <ImageView
+        android:id="@+id/imageprofile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/student"
+        android:layout_marginLeft="300dp"/>
+    <TextView
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Student Profile"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/uni_info"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="University Information"
+        android:layout_below="@+id/imageprofile"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/rollno"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Roll Number"
+        android:layout_below="@+id/uni_info"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/section"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Section"
+        android:layout_below="@+id/rollno"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/batch"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Batch"
+        android:layout_below="@+id/section"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/degree"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Degree"
+        android:layout_below="@+id/batch"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/status"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_below="@+id/degree"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/student_info"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Information"
+        android:layout_below="@+id/status"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/student_name"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@+id/student_info"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/guardian_name"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Guardian Name"
+        android:layout_below="@+id/student_name"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/student_CNIC"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Student CNIC"
+        android:layout_below="@+id/guardian_name"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/student_DOB"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="DOB"
+        android:layout_below="@+id/student_CNIC"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/student_mobile_no."
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:layout_below="@+id/student_DOB"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:onClick="goToHome"
+        android:layout_marginLeft="110dp"
+        android:layout_below="@+id/student_mobile_no."
+        android:background="@drawable/button_rounded"
+        />
+</RelativeLayout>

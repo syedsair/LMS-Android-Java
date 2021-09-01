@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imagelogin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/login_icon"
+        />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="130dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:id="@+id/app_name"
+        android:text="ALPHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagelogin"
+        />
+    <EditText
+        android:id="@+id/rollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll Number"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/app_name"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/rollno"/>
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="authenticate"
+        android:layout_below="@+id/password"
+        android:background="@drawable/button_rounded"
+        />
+
+
+
+</RelativeLayout>

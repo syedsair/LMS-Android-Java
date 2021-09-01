@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Marks"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/Announce"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Announcement"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/goback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_marginLeft="300dp"
+
+        android:background="@drawable/button_rounded"
+        />
+    <ListView
+        android:id="@+id/Announce_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Announce"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>
